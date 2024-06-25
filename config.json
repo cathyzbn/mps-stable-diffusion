@@ -1,0 +1,17 @@
+{
+    "server": {
+        "batch_size": 16,
+        "batch_wait_timeout_s": 2,
+        "num_workers": 1,
+        "img_size": 512,
+        "model_id": "stabilityai/stable-diffusion-xl-base-1.0"
+    },
+    "request_generator": {
+        "output_file": "experiment_logs/results.csv",
+        "compute_type": "default",
+        "num_requests": 120,
+        "arrival_rate": 1,
+        "prompt": "a cute cat is dancing on the grass.",
+        "url": "http://127.0.0.1:8000/imagine"
+    }
+}
